@@ -21,5 +21,18 @@
 // 	return inventory.filter((item) => item.category === category);
 // }
 
-// console.log(inventory.map((item) => item.name));
-// console.log(inventory.map((item) => item.quantity));
+// May 23 AM Challenge: Even/odd number check
+// let number;
+
+// function isEven(number) {
+// 	// let check = parseInt(number) == number;
+// 	if (typeof number !== 'number' || Number.isNaN(number)) {
+// 		console.log("We're not a number, silly");
+// 	} else if (number % 2 === 0) {
+// 		console.log("We're even");
+// 	} else {
+// 		console.log("We're an odd one");
+// 	}
+// }
+
+// isEven(null);
