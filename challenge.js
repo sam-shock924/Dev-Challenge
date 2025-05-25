@@ -179,3 +179,18 @@ switch (true) {
 		console.log('Invalid grade');
 }
 */
+
+/* 
+	Find the longest word in a sentence and display the first word and character length
+*/
+
+let text = 'this tests the superflous lenght of a string'.split(' ');
+
+let longestText = '';
+
+for (let i = 0; i < text.length; i++) {
+	if (text[i].length > longestText.length) {
+		longestText = text[i];
+	}
+}
+console.log(longestText);
