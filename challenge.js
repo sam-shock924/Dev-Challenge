@@ -182,7 +182,6 @@ switch (true) {
 
 /* 
 	Find the longest word in a sentence and display the first word and character length
-*/
 
 let text = 'this tests the superflous lenght of a string'.split(' ');
 
@@ -194,3 +193,37 @@ for (let i = 0; i < text.length; i++) {
 	}
 }
 console.log(longestText);
+*/
+
+/*
+Build a sleepTracker object that:
+	1.	Stores sleep hours for each day (Mon–Sun)
+	2.	Has a method to calculate total weekly sleep
+	3.	Has a method to compare it to an ideal (e.g., 8 hrs/night) and log the result
+
+Bonus:
+	•	Update sleep for a specific day
+	•	Detect oversleep/undersleep
+*/
+
+const weekData = [
+	{day: 'Sunday', hours: 6},
+	{day: 'Monday', hours: 5},
+	{day: 'Tuesday', hours: 8},
+	{day: 'Wednesday', hours: 8},
+	{day: 'Thursday', hours: 7},
+	{day: 'Friday', hours: 6},
+	{day: 'Saturday', hours: 10},
+];
+
+const optimalSleep = 8;
+
+weekData.forEach((day) => {
+	if (day.hours < optimalSleep) {
+		console.log(`${day.day}: Under-slept by ${optimalSleep - day.hours} hours`);
+	} else if (day.hours > optimalSleep) {
+		console.log(`${day.day}: Over-slept by ${day.hours - optimalSleep} hours`);
+	} else {
+		console.log(`${day.day}: Perfect sleep of ${optimalSleep} hours`);
+	}
+});
