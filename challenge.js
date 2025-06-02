@@ -204,7 +204,6 @@ Build a sleepTracker object that:
 Bonus:
 	•	Update sleep for a specific day
 	•	Detect oversleep/undersleep
-*/
 
 const weekData = [
 	{day: 'Sunday', hours: 6},
@@ -227,3 +226,28 @@ weekData.forEach((day) => {
 		console.log(`${day.day}: Perfect sleep of ${optimalSleep} hours`);
 	}
 });
+*/
+
+/*
+Write a function that takes an array of numbers and returns:
+	•	true if any number appears more than once
+	•	false if all numbers are unique
+
+const numberArray = [1, 2, 3, , 5];
+
+const duplicates = numberArray.filter(
+	(item, index) => numberArray.indexOf(item) !== index
+);
+
+if (duplicates.length >= 1) {
+	console.log('true');
+} else {
+	console.log('false');
+}
+console.log(duplicates);
+*/
+function upper(word) {
+	return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+console.log(upper('hello'));
