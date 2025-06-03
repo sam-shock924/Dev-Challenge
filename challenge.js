@@ -246,8 +246,32 @@ if (duplicates.length >= 1) {
 }
 console.log(duplicates);
 */
-function upper(word) {
-	return word.charAt(0).toUpperCase() + word.slice(1);
+// function upper(word) {
+// 	return word.charAt(0).toUpperCase() + word.slice(1);
+// }
+
+// console.log(upper('hello'));
+
+// function reverseWords(str) {
+// 	let words = '';
+// 	for (let i = str.length - 1; i >= 0; i--) {
+// 		words += str[i];
+// 	}
+// 	return words;
+// }
+
+// let original = 'hello';
+// let result = reverseWords(original);
+// console.log(result);
+const vowels = 'aeiouAEIOU';
+function countVowels(word) {
+	let count = 0;
+	word.split('').forEach((char) => {
+		if (vowels.includes(char)) {
+			count++;
+		}
+	});
+	return count;
 }
 
-console.log(upper('hello'));
+console.log(countVowels('are'));
